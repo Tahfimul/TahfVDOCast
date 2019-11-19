@@ -28,7 +28,7 @@ while True:
         size = len(data)
         # clientsocket.send(frame)
         print(data)
-        # [HEADER DENOTATED BY HEX REPRESENTAION OF SIZE OF DATA] [FOLLOWED BY THE DATA]
+        # [HEADER DENOTATED BY HEX REPRESENTAION OF SIZE OF DATA] [FOLLOWED BY HEX DATA OF PIXELS OF FRAME]
         s.sendall(struct.pack(">L", size) + data)
 
 
