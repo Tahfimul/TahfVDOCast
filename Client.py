@@ -12,7 +12,7 @@ vc = cv2.VideoCapture('main_anim.gif')
 c=1
 
 while True:
-    #Read video frames using OpenCV and send bytes over Socket
+    #Read video frames using OpenCV and send hex values over Socket
     if vc.isOpened():
         rval , frame = vc.read()
     else:
